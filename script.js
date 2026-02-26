@@ -1,7 +1,6 @@
 // API key and URL for OpenWeatherMap
-const apiKey = "bbcd43c07c7786eae2e5d2f0f78782d2";
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?=bbcd43c07c7786eae2e5d2f0f78782d2&units=metric&q=";
+const apiKey = "YOUR_API_KEY"; // Replace with your actual API key
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 // Selecting DOM elements
 

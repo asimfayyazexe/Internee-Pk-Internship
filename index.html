@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Fixing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fab fa-spotify"></i></div>
+
+            <!-- Mobile Search Bar (next to logo) -->
+            <div class="mobile-nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+
+            <!-- Desktop elements (hidden on mobile) -->
+            <div class="home"><i class="fas fa-home"></i></div>
+            <div class="search-bar">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <input type="text" name="input" placeholder="What do you want to play?">
+                <div class="browse"><i class="fas fa-folder-open"></i></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-p1">
+                <p>Premium</p>
+                <p>Support</p>
+                <p>Download</p>
+            </div>
+            <div class="right-p2">
+                <div class="text install"><i class="fas fa-arrow-circle-down"></i> Install App</div>
+                <div class="text signup">Sign up</div>
+                <button class="login-btn">Log in</button>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+
+<!-- Mobile Menu Sidebar -->
+<div class="mobile-menu">
+    <!-- Close Button -->
+    <div class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+    </div>
+    
+    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#"><i class="fa-solid fa-fire"></i> Trending</a>
+    <a href="#"><i class="fa-solid fa-crown"></i> Premium</a>
+    <a href="#"><i class="fa-solid fa-headset"></i> Support</a>
+    <a href="#"><i class="fa-solid fa-download"></i> Download</a>
+    <a href="#"><i class="fas fa-arrow-circle-down"></i> Install App</a>
+    <a href="#"><i class="fa-solid fa-user-plus"></i> Sign up</a>
+    <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Log in</a>
+</div>
+
+    <!-- Main Left Section -->
+
+    <div class="main">
+        <div class="left-container">
+            <div class="library">
+                <h4>My Library</h4>
+                <div><span>+</span>Create</div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new updates</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main Right Section -->
+
+        <div class="right-container">
+            <div class="music-section">
+                <h2>Popular songs</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/1.jpg" alt="Arijit Singh">
+                        <div class="music-play"><i id="1" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Sitare ("From Ikkis")</div>
+                        <div class="img-desc">Arijit Singh</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/2.jpg" alt="Sukha">
+                        <div class="music-play"><i id="2" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">ROLL WITH ME</div>
+                        <div class="img-desc">Sukha, Prodgk</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/3.jpg" alt="Khat">
+                        <div class="music-play"><i id="3" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Khat</div>
+                        <div class="img-desc">Navjot Ahuja</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/4.jpg" alt="Khayal">
+                        <div class="music-play"><i id="4" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Khayaal</div>
+                        <div class="img-desc">Talwiinder, NDS</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/5.jpg" alt="Attraction">
+                        <div class="music-play"><i id="5" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Attraction</div>
+                        <div class="img-desc">Sukha</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/6.jpg" alt="High on you">
+                        <div class="music-play"><i id="6" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">High On You</div>
+                        <div class="img-desc">Jind Verse</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/7.jpg" alt="ARY">
+                        <div class="music-play"><i id="7" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Meri Zindagi Hai Tu</div>
+                        <div class="img-desc">Asim Azhar, Sabri Sisters</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/8.jpg" alt="4am in Karachi">
+                        <div class="music-play"><i id="8" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">4am in Karachi</div>
+                        <div class="img-desc">Talha Anjum, Umair</div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/9.jpg" alt="Baarishein">
+                        <div class="music-play"><i id="9" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Baarishein</div>
+                        <div class="img-desc">Anuv Jain</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/10.jpg" alt="Deewane">
+                        <div class="music-play"><i id="10" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Deewane</div>
+                        <div class="img-desc">Navaan Sandhu</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/11.webp" alt="Ishqa Ve">
+                        <div class="music-play"><i id="11" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Ishqa Ve</div>
+                        <div class="img-desc">Zeeshan Ali</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/12.jpg" alt="ChampaKali">
+                        <div class="music-play"><i id="12" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Champakali</div>
+                        <div class="img-desc">Arpit Bala, Natiq, toorjo dey, Angad Virk</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/13.jpg" alt="Midnight Call">
+                        <div class="music-play"><i id="13" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Midnight Call</div>
+                        <div class="img-desc">Harkirat Singh </div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/14.jpg" alt="Rakh lo tum chupake">
+                        <div class="music-play"><i id="14" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Rakhlo Tum Chupaake</div>
+                        <div class="img-desc">Arpit Bala, Adil</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-section">
+                <h2>Top Artists</h2>
+                <div class="songs">
+                    <div class="artist-section">
+                        <img class="artist-img" src="artist img/arjit singh.jpg" alt="Arpit Bala">
+                        <div class="music-play"><i id="1" class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Ariit Singh</div>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-section">
+                        <img src="artist img/atif aslam.jpg" alt="Ishqa Ve">
+                        <div class="music-play"><i class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Atif Aslam</div>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-section">
+                        <img src="artist img/anuv jain.jpg" alt="ARY">
+                        <div class="music-play"><i class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Anuv Jain</div>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-section">
+                        <img src="artist img/talwiinder.jpg" alt="ARY">
+                        <div class="music-play"><i class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Talwiinder</div>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-section">
+                        <img src="artist img/talha anjum.jpg" alt="ARY">
+                        <div class="music-play"><i class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Talha Anjum</div>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-section">
+                        <img src="artist img/sukha.jpg" alt="ARY">
+                        <div class="music-play"><i class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Sukha</div>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-section">
+                <h2>Latest songs</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/1.jpg" alt="Arijit Singh">
+                        <div class="music-play"><i id="1" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Sitare ("From Ikkis")</div>
+                        <div class="img-desc">Arijit Singh</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/2.jpg" alt="Sukha">
+                        <div class="music-play"><i id="2" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">ROLL WITH ME</div>
+                        <div class="img-desc">Sukha, Prodgk</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/3.jpg" alt="Khat">
+                        <div class="music-play"><i id="3" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Khat</div>
+                        <div class="img-desc">Navjot Ahuja</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/4.jpg" alt="Khayal">
+                        <div class="music-play"><i id="4" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Khayaal</div>
+                        <div class="img-desc">Talwiinder, NDS</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/5.jpg" alt="Attraction">
+                        <div class="music-play"><i id="5" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Attraction</div>
+                        <div class="img-desc">Sukha</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/6.jpg" alt="High on you">
+                        <div class="music-play"><i id="6" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">High On You</div>
+                        <div class="img-desc">Jind Verse</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/7.jpg" alt="ARY">
+                        <div class="music-play"><i id="7" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Meri Zindagi Hai Tu</div>
+                        <div class="img-desc">Asim Azhar, Sabri Sisters</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/8.jpg" alt="4am in Karachi">
+                        <div class="music-play"><i id="8" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">4am in Karachi</div>
+                        <div class="img-desc">Talha Anjum, Umair</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/9.jpg" alt="Baarishein">
+                        <div class="music-play"><i id="9" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Baarishein</div>
+                        <div class="img-desc">Anuv Jain</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/10.jpg" alt="Deewane">
+                        <div class="music-play"><i id="10" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Deewane</div>
+                        <div class="img-desc">Navaan Sandhu</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/11.webp" alt="Ishqa Ve">
+                        <div class="music-play"><i id="11" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Ishqa Ve</div>
+                        <div class="img-desc">Zeeshan Ali</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/12.jpg" alt="ChampaKali">
+                        <div class="music-play"><i id="12" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Champakali</div>
+                        <div class="img-desc">Arpit Bala, Natiq, toorjo dey, Angad Virk</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/13.jpg" alt="Midnight Call">
+                        <div class="music-play"><i id="13" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Midnight Call</div>
+                        <div class="img-desc">Harkirat Singh </div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/14.jpg" alt="Rakh lo tum chupake">
+                        <div class="music-play"><i id="14" class=" playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Rakhlo Tum Chupaake</div>
+                        <div class="img-desc">Arpit Bala, Adil</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="images/3.jpg" alt="">
+            <div class="title-info">
+                <div class="music-title">Deewane</div>
+                <div class="music-desc">Navaan Sandhu</div>
+            </div>
+
+        </div>
+        <div class="music-controllers">
+            <div class="player">
+                <div id="shuffle"><i class=" player-btns fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class=" player-btns fa-solid fa-backward-step"></i></div>
+                <div><i id="play" class=" player-btns fa-solid fa-circle-play"></i></div>
+                <div><i id="forward" class=" player-btns fa-solid fa-forward-step"></i></div>
+                <div id="repeat"><i class=" player-btns fa-solid fa-repeat"></i></div>
+            </div>
+
+            <div class="progress-bar">
+                <input type="range" id="progress-bar" value="0">
+            </div>
+        </div>
+        <div class="volume-bar">
+            <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+            <input type="range" id="volume-bar" min="0" max="100" value="100">
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

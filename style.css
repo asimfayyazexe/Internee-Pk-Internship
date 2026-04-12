@@ -1045,8 +1045,8 @@ input[type="range"]::-webkit-slider-thumb {
 
   .music-card img,
   .artist-section img {
-    height: 6.5rem;
-    width: 6.5rem;
+    height: 5.5rem;
+    width: 5.5rem;
   }
 
   .img-title {

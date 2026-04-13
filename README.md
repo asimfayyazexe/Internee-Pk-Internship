@@ -13,7 +13,7 @@ This project focuses on DOM manipulation, event handling, and file upload UI sim
 * File preview using `URL.createObjectURL()`
 * Remove file option
 * Simulated upload progress bar
-* Clean and responsive simple UI design
+* Clean and responsive simple UI design.
 
 ## How It Works
 

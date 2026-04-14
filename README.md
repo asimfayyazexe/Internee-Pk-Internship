@@ -1,7 +1,5 @@
 ﻿# Chat-Application-Using-HTML-CSS-and-JavaScript-Api
 
-# AI Chat Application
-
 A lightweight, browser-based chat application powered by the **ChatGPT-42 RapidAPI**, built with vanilla HTML, CSS, and JavaScript. No frameworks, no installs — just open and chat.
 
 ---

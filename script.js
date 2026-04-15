@@ -35,6 +35,5 @@ form.addEventListener("submit", (e) => {
 
   if (isValid) {
     console.log("Form Submitted");
-    // form.submit(); // optional
   }
 });

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form with Progress Indicator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Progress Bar -->
+        <div class="progress-wrapper" id="progress-wrapper">
+            <ul class="progressBar">
+                <li class="active" id="step-dot-1"><span class="num">1</span></li>
+                <div class="line" id="line-1"></div>
+                <li id="step-dot-2"><span class="num">2</span></li>
+                <div class="line" id="line-2"></div>
+                <li id="step-dot-3"><span class="num">3</span></li>
+            </ul>
+            <div class="step-labels">
+                <span class="active-label" id="lbl-1">Personal</span>
+                <span id="lbl-2">Account</span>
+                <span id="lbl-3">Review</span>
+            </div>
+        </div>
+
+        <!-- STEP 1 Form-->
+        <div class="form-step active" id="step-1">
+            <h2>Personal Information</h2>
+            <p class="subtitle">Tell us a bit about yourself</p>
+
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Ali" />
+                <div class="error-msg" id="err-fullName">Full name is required</div>
+            </div>
+
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="abc@example.com" />
+                <div class="error-msg" id="err-email">Enter a valid email</div>
+            </div>
+
+            <div class="field">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="+92 0312 3456780" />
+                <div class="error-msg" id="err-phone">Phone number is required</div>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn btn-next" onclick="goNext(1)">Next →</button>
+            </div>
+        </div>
+
+        <!-- STEP 2 Form -->
+        <div class="form-step" id="step-2">
+            <h2>Account Setup</h2>
+            <p class="subtitle">Create your login credentials</p>
+
+            <div class="field">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="ali123" />
+                <div class="error-msg" id="err-username">Username is required</div>
+            </div>
+
+            <div class="field">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Min. 6 characters" />
+                <div class="error-msg" id="err-password">Minimum 6 characters</div>
+            </div>
+
+            <div class="field">
+                <label>Country / Location</label>
+                <select id="country">
+                    <option value="">Select a country...</option>
+                    <option>Pakistan</option>
+                    <option>Canada</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>India</option>
+                    <option>UAE</option>
+                    <option>Other</option>
+                </select>
+                <div class="error-msg" id="err-country">Please select a country</div>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn btn-back" onclick="goBack(2)">← Back</button>
+                <button class="btn btn-next" onclick="goNext(2)">Next →</button>
+            </div>
+        </div>
+
+        <!-- Review -->
+        <div class="form-step" id="step-3">
+            <h2>Review & Confirm</h2>
+            <p class="subtitle">Make sure everything looks right</p>
+
+            <div class="review-box">
+                <h3>Personal Info</h3>
+                <div class="review-item"><span>Full Name</span><span id="r-name">—</span></div>
+                <div class="review-item"><span>Email</span><span id="r-email">—</span></div>
+                <div class="review-item"><span>Phone</span><span id="r-phone">—</span></div>
+            </div>
+
+            <div class="review-box">
+                <h3>Account Details</h3>
+                <div class="review-item"><span>Username</span><span id="r-username">—</span></div>
+                <div class="review-item"><span>Country</span><span id="r-country">—</span></div>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn btn-back" onclick="goBack(3)">← Back</button>
+            </div>
+            <button class="btn btn-submit" onclick="submitForm()">Submit</button>
+        </div>
+
+        <!-- Success -->
+        <div class="success-screen" id="success">
+            <div class="check-icon">✓</div>
+            <h2>You're all set!</h2>
+            <p>Your account has been created successfully.</p>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

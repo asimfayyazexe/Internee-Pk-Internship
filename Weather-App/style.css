@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-image: url(images/weather-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+/* Nav Bar */
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+#city-input {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+#search-btn {
+  background-color: white;
+  padding: 0.4rem 0.4rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0.2rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: rgb(211, 164, 89);
+  cursor: pointer;
+}
+
+/* Main Section */
+
+main {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.378);
+  border: 1px solid rgba(205, 214, 221, 0.558);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-height: 380px;
+  width: 90%;
+  max-width: 600px;
+  gap: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-info h2 {
+  font-size: 4rem;
+  margin: 2rem 0 auto;
+}
+
+.weather-info p {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.378);
+
+  box-shadow: 0 4px 10px rgba(130, 127, 127, 0.1);
+  border-radius: 0.5rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.details p {
+  text-align: center;
+}
+
+#wind,
+#humidity {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.378);
+  border: 1px solid rgba(177, 195, 212, 0.558);
+  box-shadow: 0 4px 10px rgba(57, 55, 55, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 110px;
+  text-align: center;
+}
+
+#city-input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#search-btn:hover {
+  background-color: rgb(213, 172, 107);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+

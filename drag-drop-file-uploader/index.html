@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and File Uploader</title>
+  <link rel="stylesheet" href="style.css">
+  <!--Linking Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awsome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h3>Drag & Drop File Upload</h3>
+
+    <div class="drop-area" id="dropArea">
+      <div class="drop-icon">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+      </div>
+      <p>Drag & Drop Files Here <br> or Click to Upload</p>
+      <input type="file" id="fileInput" multiple hidden>
+    </div>
+
+    <div id="preview"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

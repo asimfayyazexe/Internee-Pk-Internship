@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* BG VIDEO STYLING */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    object-position: center; 
+    z-index: -1;
+}
+
+
+.wrapper{
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255 ,0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 45px 30px 30px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255 ,0.2);
+    outline: none;
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    color: white;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.error{
+    margin-left: 0.5rem;
+    display: none;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    padding: 10px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    margin: 2%;
+    font-weight: 600;
+}
+
+.wrapper .acc-register {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.acc-register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.acc-register p a:hover{
+    text-decoration: underline;
+}
+
+
+.hero_img_container{
+    color: black;
+    z-index: 1;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .wrapper .btn button {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .acc-register {
+        font-size: 1px;
+    }
+}

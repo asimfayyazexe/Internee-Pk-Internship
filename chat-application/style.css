@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    69.7deg,
+    rgba(216, 81, 82, 1) 40%,
+    rgba(154, 27, 69, 1) 100.1%
+  );
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  height: 600px;
+  width: 640px;
+  border-radius: 15px;
+  box-shadow: 8px 0px 10px rgba(70, 69, 69, 0.3);
+  position: relative;
+}
+
+.card-header h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem;
+  cursor: pointer;
+  color: rgb(58, 78, 81);
+}
+
+/* Scrollbar Styles */
+
+.card-body {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #898a8b;
+  border-radius: 10px;
+}
+
+/* Chat Box */
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  width: 100%;
+  border-top: 1px solid #e2e3e4;
+}
+
+.user {
+  display: flex;
+  align-self: flex-end;
+  background-color: #f0f0f0;
+  color: black;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 10px;
+  max-width: 75%;
+  width: fit-content;
+  position: relative;
+}
+
+.chatbot {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 10px;
+  max-width: 75%;
+  width: fit-content;
+  position: relative;
+}
+
+.user p,
+.chatbot p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.user .msg-content {
+  min-width: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-robot {
+  margin: 0.2rem;
+}
+
+/* Footer */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Chat Input */
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 3rem;
+  outline: none;
+  border: 1px solid #ddddde;
+  border-radius: 10px;
+  position: relative;
+  font-family: inherit;
+  font-size: 1rem;
+  overflow-y: auto;
+  resize: none;
+  max-height: 150px;
+  min-height: 50px;
+  line-height: 1.5;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+.sending-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(58, 78, 81);
+}
+
+.msg-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.timestamp {
+  font-size: 0.5rem;
+  color: #999;
+  margin: 0.1rem;
+  position: absolute;
+  bottom: 0;
+  align-self: flex-end;
+}

@@ -1,7 +1,7 @@
 ﻿# Drag-and-Drop-File-Uploader-With-Preview-Progress-Bar
 
 A simple and modern drag-and-drop file uploader built with **HTML, CSS, and Vanilla JavaScript**.
-This project focuses on DOM manipulation, event handling, and file upload UI simulation without using any external frameworks.
+This project focuses on DOM manipulation, event handling, and file upload UI simulation without using any external frameworks
 
 ## Features
 
